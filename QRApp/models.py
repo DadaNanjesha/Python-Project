@@ -5,6 +5,7 @@ from django.db import models
 
 # Create your models here.
 class Gtin(models.Model):
+    objects = None
     gtin_number = models.CharField(max_length=30)
     product_name = models.CharField(max_length=30)
 
