@@ -8,8 +8,8 @@ class Gtin(models.Model):
     gtin_number = models.CharField(max_length=30)
     product_name = models.CharField(max_length=30)
 
-    def __str__(self):
-        return self.product_name
+    # def __str__(self):
+    #     return self.gtin_number
 
     class Meta:
         verbose_name_plural = "GTIN NUMBER"
